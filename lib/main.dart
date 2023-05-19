@@ -24,10 +24,14 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Stack(
-        alignment: AlignmentDirectional.center,
+      home: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
+          Stack(
+            alignment: AlignmentDirectional.center,
+            children: [
+              Container(
             color: Colors.red,
             width: 250,
             height: 250,
@@ -37,6 +41,8 @@ class MyApp extends StatelessWidget {
             width: 100,
             height: 100,
           ),
+            ],
+          )
         ],
       ),
     );
